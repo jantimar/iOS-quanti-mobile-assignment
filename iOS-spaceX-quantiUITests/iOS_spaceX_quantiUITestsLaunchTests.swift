@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class iOS_spaceX_quantiUITestsLaunchTests: XCTestCase {
+final class SpaceXQuantiUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

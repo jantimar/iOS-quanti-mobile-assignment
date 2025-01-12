@@ -63,3 +63,15 @@ Here's a bit more tricky. There is a need to implement the gyro/accelerometer de
 ### Submission
 Create a fork of this repository and then give us access to it when you are done. 
 
+# Solution
+
+TODO: Description
+
+## TODO:
+
+- [ ] Test reducers
+- [ ] Test services
+- [ ] Test utils
+- [ ] Cleanup code
+- [ ] Launch rocket screen
+- [ ] Navigation hiearchy

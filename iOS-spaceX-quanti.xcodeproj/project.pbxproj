@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3D1B2F8D2D34126F00C69835 /* Utils in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1B2F8C2D34126F00C69835 /* Utils */; };
+		3D1B2F962D34239D00C69835 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 3D1B2F952D34239D00C69835 /* Models */; };
+		3D7001802D31EB13007D24AB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3D70017F2D31EB13007D24AB /* ComposableArchitecture */; };
+		3D7001CF2D3292C6007D24AB /* SpaceXApiService in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001CE2D3292C6007D24AB /* SpaceXApiService */; };
+		3D7001EB2D340B15007D24AB /* Atoms in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001EA2D340B15007D24AB /* Atoms */; };
+		3D7001ED2D340B15007D24AB /* Locs in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001EC2D340B15007D24AB /* Locs */; };
+		3D7001EF2D340B15007D24AB /* Molecules in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001EE2D340B15007D24AB /* Molecules */; };
+		3D7001F12D340B15007D24AB /* Organisms in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001F02D340B15007D24AB /* Organisms */; };
+		3D7001F32D340B15007D24AB /* Style in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001F22D340B15007D24AB /* Style */; };
+		3D7001F52D340B15007D24AB /* Templates in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7001F42D340B15007D24AB /* Templates */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3D2119B92D31E635008E5581 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,14 +37,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D1B2F8B2D34125900C69835 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		3D2119A62D31E633008E5581 /* iOS-spaceX-quanti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-spaceX-quanti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2119B82D31E635008E5581 /* iOS-spaceX-quantiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-spaceX-quantiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2119C22D31E635008E5581 /* iOS-spaceX-quantiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-spaceX-quantiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D70018E2D327A56007D24AB /* Models */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Models; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3D7001902D328BBF007D24AB /* Exceptions for "Services" folder in "iOS-spaceX-quanti" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				APIService,
+				Locs,
+				SpaceXApiService,
+			);
+			target = 3D2119A52D31E633008E5581 /* iOS-spaceX-quanti */;
+		};
+		3D7001E22D33F9F4007D24AB /* Exceptions for "iOS-spaceX-quanti" folder in "iOS-spaceX-quanti" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Components/Atoms,
+				Components/Molecules,
+				Components/Organisms,
+				Components/Style,
+				Components/Templates,
+			);
+			target = 3D2119A52D31E633008E5581 /* iOS-spaceX-quanti */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3D2119A82D31E633008E5581 /* iOS-spaceX-quanti */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D7001E22D33F9F4007D24AB /* Exceptions for "iOS-spaceX-quanti" folder in "iOS-spaceX-quanti" target */,
+			);
 			path = "iOS-spaceX-quanti";
 			sourceTree = "<group>";
 		};
@@ -45,6 +86,14 @@
 			path = "iOS-spaceX-quantiUITests";
 			sourceTree = "<group>";
 		};
+		3D70018D2D327A27007D24AB /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D7001902D328BBF007D24AB /* Exceptions for "Services" folder in "iOS-spaceX-quanti" target */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +101,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1B2F962D34239D00C69835 /* Models in Frameworks */,
+				3D7001EF2D340B15007D24AB /* Molecules in Frameworks */,
+				3D7001F12D340B15007D24AB /* Organisms in Frameworks */,
+				3D1B2F8D2D34126F00C69835 /* Utils in Frameworks */,
+				3D7001ED2D340B15007D24AB /* Locs in Frameworks */,
+				3D7001EB2D340B15007D24AB /* Atoms in Frameworks */,
+				3D7001802D31EB13007D24AB /* ComposableArchitecture in Frameworks */,
+				3D7001F52D340B15007D24AB /* Templates in Frameworks */,
+				3D7001F32D340B15007D24AB /* Style in Frameworks */,
+				3D7001CF2D3292C6007D24AB /* SpaceXApiService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +134,13 @@
 		3D21199D2D31E633008E5581 = {
 			isa = PBXGroup;
 			children = (
+				3D70018E2D327A56007D24AB /* Models */,
+				3D1B2F8B2D34125900C69835 /* Utils */,
+				3D70018D2D327A27007D24AB /* Services */,
 				3D2119A82D31E633008E5581 /* iOS-spaceX-quanti */,
 				3D2119BB2D31E635008E5581 /* iOS-spaceX-quantiTests */,
 				3D2119C52D31E635008E5581 /* iOS-spaceX-quantiUITests */,
+				3D70017E2D31EB13007D24AB /* Frameworks */,
 				3D2119A72D31E633008E5581 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +155,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3D70017E2D31EB13007D24AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2119CC2D31E635008E5581 /* Build configuration list for PBXNativeTarget "iOS-spaceX-quanti" */;
 			buildPhases = (
+				3D1B304E2D347EDB00C69835 /* Swiftlint */,
 				3D2119A22D31E633008E5581 /* Sources */,
 				3D2119A32D31E633008E5581 /* Frameworks */,
 				3D2119A42D31E633008E5581 /* Resources */,
@@ -109,9 +180,20 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3D2119A82D31E633008E5581 /* iOS-spaceX-quanti */,
+				3D70018D2D327A27007D24AB /* Services */,
 			);
 			name = "iOS-spaceX-quanti";
 			packageProductDependencies = (
+				3D70017F2D31EB13007D24AB /* ComposableArchitecture */,
+				3D7001CE2D3292C6007D24AB /* SpaceXApiService */,
+				3D7001EA2D340B15007D24AB /* Atoms */,
+				3D7001EC2D340B15007D24AB /* Locs */,
+				3D7001EE2D340B15007D24AB /* Molecules */,
+				3D7001F02D340B15007D24AB /* Organisms */,
+				3D7001F22D340B15007D24AB /* Style */,
+				3D7001F42D340B15007D24AB /* Templates */,
+				3D1B2F8C2D34126F00C69835 /* Utils */,
+				3D1B2F952D34239D00C69835 /* Models */,
 			);
 			productName = "iOS-spaceX-quanti";
 			productReference = 3D2119A62D31E633008E5581 /* iOS-spaceX-quanti.app */;
@@ -195,6 +277,9 @@
 			);
 			mainGroup = 3D21199D2D31E633008E5581;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3D7001732D31E92D007D24AB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3D2119A72D31E633008E5581 /* Products */;
 			projectDirPath = "";
@@ -230,6 +315,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D1B304E2D347EDB00C69835 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nif which swiftlint >/dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D2119A22D31E633008E5581 /* Sources */ = {
@@ -306,7 +412,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -328,6 +434,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -369,7 +476,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -384,6 +491,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -399,11 +507,13 @@
 				DEVELOPMENT_TEAM = 9Q6922742Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SpaceX;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +538,13 @@
 				DEVELOPMENT_TEAM = 9Q6922742Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SpaceX;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +670,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D7001732D31E92D007D24AB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D1B2F8C2D34126F00C69835 /* Utils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Utils;
+		};
+		3D1B2F952D34239D00C69835 /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+		3D70017F2D31EB13007D24AB /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D7001732D31E92D007D24AB /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		3D7001CE2D3292C6007D24AB /* SpaceXApiService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpaceXApiService;
+		};
+		3D7001EA2D340B15007D24AB /* Atoms */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Atoms;
+		};
+		3D7001EC2D340B15007D24AB /* Locs */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Locs;
+		};
+		3D7001EE2D340B15007D24AB /* Molecules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Molecules;
+		};
+		3D7001F02D340B15007D24AB /* Organisms */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Organisms;
+		};
+		3D7001F22D340B15007D24AB /* Style */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Style;
+		};
+		3D7001F42D340B15007D24AB /* Templates */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Templates;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D21199E2D31E633008E5581 /* Project object */;
 }
