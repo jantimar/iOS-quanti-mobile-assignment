@@ -34,6 +34,17 @@
         }
       }
     },
+    "rocket.detail.bar_button.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Launch"
+          }
+        }
+      }
+    },
     "rocket.detail.burn" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -189,8 +200,38 @@
         }
       }
     },
-    "RocketLaunchView" : {
-
+    "rocket.launch.message.flying" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Launch successful!"
+          }
+        }
+      }
+    },
+    "rocket.launch.message.idle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move your phone up to launch the rocket"
+          }
+        }
+      }
+    },
+    "rocket.launch.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Launch"
+          }
+        }
+      }
     },
     "rockets.list.first_flight" : {
       "extractionState" : "manual",
@@ -213,6 +254,9 @@
           }
         }
       }
+    },
+    "Start" : {
+
     }
   },
   "version" : "1.0"

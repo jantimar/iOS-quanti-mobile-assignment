@@ -29,6 +29,13 @@ public enum LocKey: String {
     case rocketDetailFuel = "rocket.detail.fuel"
     case rocketDetailBurn = "rocket.detail.burn"
 
+    case rocketDetailBarButton = "rocket.detail.bar_button.title"
+
+    // Rocket launch
+    case rocketLaunchTitle = "rocket.launch.title"
+    case rocketLaunchMessageFlying = "rocket.launch.message.flying"
+    case rocketLaunchMessageIdle = "rocket.launch.message.idle"
+
     // Errors
     case errorNoRockets = "error.no_rockets"
     case errorNetwork = "error.network"

@@ -10,6 +10,8 @@ import Style
 
 public enum ImageType: String {
     case rocketError
+    case rocketFlying
+    case rocketIdle
 }
 
 extension Image {
