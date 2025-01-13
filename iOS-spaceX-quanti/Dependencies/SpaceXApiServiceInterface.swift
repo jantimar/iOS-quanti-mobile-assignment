@@ -21,7 +21,7 @@ extension SpaceXApiServiceInterface: DependencyKey {
             baseUrl: "https://api.spacexdata.com/"
         )
 
-        return SpaceXApiServiceInterface(
+        return .init(
             fetchRockets: apiService.fetchRockets
         )
     }

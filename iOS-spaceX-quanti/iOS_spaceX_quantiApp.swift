@@ -13,10 +13,10 @@ struct SpaceXQuantiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RocketListView(
+            RootView(
                 store: Store(
-                    initialState: RocketListFeature.State(),
-                    reducer: RocketListFeature.init
+                    initialState: RootFeature.State(root: RocketListFeature.State()),
+                    reducer: RootFeature.init
                 )
             )
         }

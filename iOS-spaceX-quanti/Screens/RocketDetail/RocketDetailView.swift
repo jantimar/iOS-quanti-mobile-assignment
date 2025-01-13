@@ -19,7 +19,7 @@ import Molecules
 struct RocketDetailView: View {
 
     @Environment(\.style) private var style
-    let store: StoreOf<RocketDetailFeature>
+    @Bindable var store: StoreOf<RocketDetailFeature>
 
     var body: some View {
         let rocket = store.state.rocket
@@ -47,6 +47,11 @@ struct RocketDetailView: View {
         }
         .background(style.colors.backgroundsPrimary)
         .navigationTitle(rocket.name ?? "")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(localize(.rocketDetailBarButton)) { store.send(.launch) }
+            }
+        }
     }
 
     @ViewBuilder

@@ -11,17 +11,24 @@ import ComposableArchitecture
 @Reducer
 struct RocketLaunchFeature {
 
+    @Dependency(\.motion) var motionManager
+
     @ObservableState
     struct State: Equatable {
+        var started = false
     }
 
     enum Action {
-        case none
+        case start
     }
 
     var body: some ReducerOf<Self> {
-        Reduce { _, _ in
-            return .none
+        Reduce { state, action in
+            switch action {
+            case .start:
+                state.started = true
+                return .none
+            }
         }
     }
 }

@@ -22,18 +22,11 @@ struct RocketDetailFeature {
     }
 
     var body: some ReducerOf<Self> {
-        Reduce { _, action in
+        Reduce { state, action in
             switch action {
             case .launch:
                 return .none
             }
         }
-    }
-}
-
-extension RocketDetailFeature {
-    @Reducer
-    enum Destination {
-        case launchRocket(RocketLaunchFeature)
     }
 }
